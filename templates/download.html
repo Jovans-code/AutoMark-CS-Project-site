@@ -1,45 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AutoGrader | Download</title>
-    <link rel="stylesheet" href="static/style.css" />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoMark | Download</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
-        <h1>AutoGrader</h1>
-        <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        </nav>
+        <div class="header-container">
+            <h1>AutoMark</h1>
+            <button class="hamburger" aria-expanded="false" aria-label="Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="primary-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="download.html" aria-current="page">Download</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-<main>
-    <section>
-    <h2>Download & Install</h2>
-    <p>Get the latest version of the AutoGrader App for Android.</p>
+    <main class="download-page">
+        <section class="download-section">
+            <h2>Download & Install</h2>
+            <p>Get the latest version of the AutoMark App for Android.</p>
 
-    <a href="apk/AutoGraderApp.apk" class="cta">⬇️ Download APK</a>
+            <a href="apk/AutoMarkApp.apk" class="cta download-btn">
+                <i class="fas fa-download"></i> Download APK
+            </a>
 
-    <h3>Installation Instructions:</h3>
-    <ol>
-        <li>Click the download button above.</li>
-        <li>Allow installation from unknown sources in your device settings.</li>
-        <li>Install the APK and log in with your account.</li>
-    </ol>
+            <div class="instructions">
+                <h3>Installation Instructions:</h3>
+                <ol>
+                    <li>Click the download button above</li>
+                    <li>Allow installation from unknown sources in your device settings</li>
+                    <li>Install the APK and log in with your account</li>
+                    <li>For first-time users, create a new account</li>
+                </ol>
+            </div>
 
-    <h3>GitHub Repository</h3>
-    <p>Browse the full project source code, report issues, or contribute:</p>
-    <a href="https://github.com/Lyazi-Patrick/AutoMark-CS-Project" target="_blank">🔗 View on GitHub</a>
-    </section>
-</main>
+            <div class="github-repo">
+                <h3>GitHub Repository</h3>
+                <p>Browse the full project source code, report issues, or contribute:</p>
+                <a href="https://github.com/Lyazi-Patrick/AutoMark-CS-Project" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+        </section>
+    </main>
 
-<footer>
-    <p>&copy; 2025 AutoGrader Team</p>
-    <p>Terms and conditions apply </p>
-</footer>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>AutoMark</h4>
+                <p>AI-powered grading solutions for educators</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="download.html">Download</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="https://twitter.com/autograderapp" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://github.com/Lyazi-Patrick/AutoMark-CS-Project" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/company/automark" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://facebook.com/automarkapp" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 AutoMark Team. All rights reserved.</p>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="static/main.js"></script>
 </body>
 </html>

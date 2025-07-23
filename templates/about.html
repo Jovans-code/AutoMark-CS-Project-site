@@ -1,49 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AutoGrader | About</title>
-    <link rel="stylesheet" href="static/style.css" />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoMark App | About</title>
+    <meta name="description" content="Learn about AutoMark App - an intelligent grading assistant using Flutter, Firebase, and Google ML Kit">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
-<header>
-    <h1>AutoGrader</h1>
-    <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="download.html">Download</a>
-    <a href="contact.html">Contact uS</a>
-    </nav>
-</header>
+    <header>
+        <div class="header-container">
+            <h1>AutoMark App</h1>
+            <button class="hamburger" aria-expanded="false" aria-label="Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="primary-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" aria-current="page">About</a></li>
+                    <li><a href="download.html">Download</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<main>
-    <section>
-    <h2>About the Project</h2>
-    <p>AutoGrader is an intelligent grading assistant built using Flutter, Firebase, and Google ML Kit. It simplifies the marking and grading process of student scripts through OCR-powered scanning and instant result generation.</p>
+    <main class="about-page">
+        <section class="about-section">
+            <h2>About the Project</h2>
+            <p>AutoMark App is an intelligent grading assistant built using Flutter, Firebase, and Google ML Kit. It simplifies the marking and grading process of student scripts through OCR-powered scanning and instant result generation.</p>
+        </section>
 
-    <h3>Team Roles & Contributions</h3>
-    <ul>
-        <li><strong>Patrick:</strong> Coordinated development and intergrated numerous screens into the project.</li>
-        <li><strong>Ssekidde Jovan:</strong>Designed and developed some Application screens and Website.</li>
-        <li><strong>Wasswa Drake:</strong> Integrated OCR and improved model accuracy.</li>
-        <li><strong>Milla Samantha:</strong> Built the UI/UX for mobile and web.</li>
-        <li><strong>Adrian Katongole:</strong> Set up authentication and real-time storage.</li>
-    </ul>
+        <section class="team-section">
+            <h3>Team Roles & Contributions</h3>
+            <ul class="team-list">
+                <li class="team-member">
+                    <strong>Patrick:</strong> Coordinated development and integrated numerous screens into the project.
+                </li>
+                <li class="team-member">
+                    <strong>Ssekidde Jovan:</strong> Designed and developed application screens and website.
+                </li>
+                <li class="team-member">
+                    <strong>Wasswa Drake:</strong> Integrated OCR and improved model accuracy.
+                </li>
+                <li class="team-member">
+                    <strong>Milla Samantha:</strong> Built the UI/UX for mobile and web.
+                </li>
+                <li class="team-member">
+                    <strong>Adrian Katongole:</strong> Set up authentication and real-time storage.
+                </li>
+            </ul>
+        </section>
 
-    <h3>How the ML & OCR Works</h3>
-    <p>We use Google's ML Kit Text Recognition API to scan handwritten or printed text from Question papers, marking guides and answer sheets. The recognized answers are then matched against correct responses stored in the app's Firebase database. This allows for:</p>
-    <ul>
-        <li>Instant grading based on predefined answers.</li>
-        <li>Highlighting of wrong and correct answers.</li>
-        <li>Exporting of results and summary reports.</li>
-    </ul>
-    </section>
-</main>
+        <section class="tech-section">
+            <h3>How the ML & OCR Works</h3>
+            <p>We use Google's ML Kit Text Recognition API to scan handwritten or printed text from question papers, marking guides and answer sheets. The recognized answers are then matched against correct responses stored in the app's Firebase database. This allows for:</p>
+            <ul class="feature-list">
+                <li>Instant grading based on predefined answers</li>
+                <li>Highlighting of wrong and correct answers</li>
+                <li>Exporting of results and summary reports</li>
+                <li>Detailed analytics on student performance</li>
+                <li>Customizable grading rubrics</li>
+            </ul>
+        </section>
+    </main>
 
-<footer>
-    <p>&copy; 2025 AutoGrader Team</p>
-</footer>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 AutoMark App Team. All rights reserved.</p>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="contact.html">Support</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="static/main.js"></script>
 </body>
 </html>
+

@@ -1,54 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>AutoGrader | Contact Us</title>
-<link rel="stylesheet" href="static/style.css" />
-<link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoMark | Contact Us</title>
+    <meta name="description" content="Contact the AutoMark team for support, questions, or feedback about our AI-powered grading app">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
-<header>
-    <h1>AutoGrader</h1>
-    <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="download.html">Download</a>
-    </nav>
-</header>
+    <header>
+        <div class="header-container">
+            <h1>AutoMark</h1>
+            <button class="hamburger" aria-expanded="false" aria-label="Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="primary-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="download.html">Download</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<main>
-    <section>
-    <h2>Contact Us</h2>
-    <p>If you have any questions, suggestions, or want to report an issue, feel free to reach out to us!</p>
+    <main class="contact-page">
+        <section class="contact-section">
+            <h2>Contact Us</h2>
+            <p class="contact-intro">Have questions, suggestions, or need support? We'd love to hear from you!</p>
 
-    <h3>Reach Out</h3>
-    <ul>
-        <li>Email: <a href="mailto:support@autograder.app">support@autograder.app</a></li>
-        <li>Twitter: <a href="https://twitter.com/autograderapp" target="_blank">AutoGraderApp</a></li> 
-        <li>GitHub Issues: <a href="https://github.com/Lyazi-Patrick/AutoMark-CS-Project" target="_blank">Submit Feedback</a></li>
-    </ul>
+            <div class="contact-methods">
+                <div class="contact-info">
+                    <h3>Reach Out Directly</h3>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:support@automark.app">support@automark.app</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            +(256) 786-592537
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Makerere University, Kampala, Uganda
+                        </li>
+                    </ul>
+                </div>
 
-    <h3>Feedback Form</h3>
-    <form action="mailto:support@autograder.app" method="post" enctype="text/plain">
-        <label for="name">Your Name:</label><br />
-        <input type="text" id="name" name="name" required /><br /><br />
+                <div class="feedback-form">
+                    <h3>Send Us a Message</h3>
+                    <form action="https://formspree.io/f/your-form-id" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Your Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject:</label>
+                            <select id="subject" name="subject">
+                                <option value="support">Technical Support</option>
+                                <option value="feedback">Product Feedback</option>
+                                <option value="partnership">Partnership Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message:</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
-        <label for="email">Your Email:</label><br />
-        <input type="email" id="email" name="email" required /><br /><br />
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>AutoMark</h4>
+                <p>AI-powered grading solutions for modern educators.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="download.html">Download</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="https://twitter.com/autograderapp" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://github.com/Lyazi-Patrick/AutoMark-CS-Project" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/company/automark" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://facebook.com/automarkapp" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 <strong>AutoMark Team</strong>. All rights reserved.</p>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
 
-        <label for="message">Your Message:</label><br />
-        <textarea id="message" name="message" rows="6" required></textarea><br /><br />
-
-        <button type="submit">Send Feedback</button>
-    </form>
-    </section>
-</main>
-
-<footer>
-    <p>&copy; 2025 <strong>AutoGrader Team</strong>. All rights reserved.</p>
-    <p>Terms and conditions apply. For more information, please refer to our <a href="terms.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a>.</p>
-    </p>
-</footer>
+    <script src="static/main.js"></script>
 </body>
 </html>
