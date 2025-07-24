@@ -31,20 +31,56 @@
         </div>
     </header>
     <main>
-        <section class="hero">
-            <h2>Welcome to AutoMark</h2>
-            <p>Scan. Grade. Review. All in one powerful mobile app.</p>
-            <a class="cta" href="download.html">📲 Download AutoMark App</a>
+        <section class="hero enhanced-hero">
+            <div class="hero-content">
+                <h2>Welcome to AutoMark</h2>
+                <p>Scan. Grade. Review. All in one powerful mobile app.</p>
+                <a class="cta" href="download.html">📲 Download AutoMark App</a>
+            </div>
         </section>
 
         <section class="screenshots">
             <h3>App Screenshots</h3>
-            <div class="scrolling-image-row">
-                <img src="../images/Home_screen.jpg" alt="Home Screenshot">
-                <img src="../images/Upload script.jpg" alt="Upload Screenshot">
-                <img src="../images/Guide_scanner.jpg" alt="Scan Marking-Guide Screenshot">
-                <img src="../images/Mark_script.jpg" alt="marked Scripts Screenshot">
-                <img src="../images/Results.jpg" alt="Results Screenshot">
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <div class="slide-card">
+                        <img src="../images/Home_screen.jpg" alt="Home Screenshot">
+                        <div class="slide-caption">Home Screen</div>
+                    </div>
+                </div>
+                <div class="slide fade">
+                    <div class="slide-card">
+                        <img src="../images/Upload script.jpg" alt="Upload Screenshot">
+                        <div class="slide-caption">Upload Script</div>
+                    </div>
+                </div>
+                <div class="slide fade">
+                    <div class="slide-card">
+                        <img src="../images/Guide_scanner.jpg" alt="Scan Marking-Guide Screenshot">
+                        <div class="slide-caption">Scan Marking Guide</div>
+                    </div>
+                </div>
+                <div class="slide fade">
+                    <div class="slide-card">
+                        <img src="../images/Mark_script.jpg" alt="marked Scripts Screenshot">
+                        <div class="slide-caption">Mark Script</div>
+                    </div>
+                </div>
+                <div class="slide fade">
+                    <div class="slide-card">
+                        <img src="../images/Results.jpg" alt="Results Screenshot">
+                        <div class="slide-caption">Results</div>
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="dots" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
             </div>
         </section>
 
@@ -59,8 +95,8 @@
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
+    <footer class="footer">
+        <div class="footer-grid">
             <div class="footer-section">
                 <h4>AutoMark</h4>
                 <p>Innovative grading solutions for modern educators.</p>
@@ -69,20 +105,48 @@
                 <h4>Contact</h4>
                 <p>support@automark.edu</p>
                 <p>+(256) 786-592537</p>
-            <div class="social-icons">
-                <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://github.com/Lyazi-Patrick/AutoMark-CS-Project" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                <a href="https://linkedin.com/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a>
-            </div>
+                <div class="social-links">
+                    <a class="social-link" href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a class="social-link" href="https://github.com/Lyazi-Patrick/AutoMark-CS-Project" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a class="social-link" href="https://linkedin.com/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a class="social-link" href="https://facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a>
+                </div>
             </div>
         </div>
-        <div class="copyright">
+        <div class="footer-bottom">
             <p>&copy; 2025 AutoMark Team. All rights reserved.</p>
             <p>Terms and conditions apply. For more information, please refer to our <a href="terms.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a>.</p>
         </div>
     </footer>
     <script src="../static/scripts/main.js"></script>
+    <script>
+    let slideIndex = 0;
+    showSlides();
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("slide");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 3500); // Change image every 3.5 seconds
+    }
+    function plusSlides(n) {
+        slideIndex += n-1;
+        if (slideIndex < 0) slideIndex = 0;
+        showSlides();
+    }
+    function currentSlide(n) {
+        slideIndex = n-1;
+        showSlides();
+    }
+    </script>
 </body>
 </html>
