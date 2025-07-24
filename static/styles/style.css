@@ -752,3 +752,277 @@ footer {
         padding: 18px 8px 14px 8px;
     }
 }
+
+/* ===== ENHANCED TEAM SECTION ===== */
+.enhanced-team-section {
+    margin: 60px 0 40px 0;
+    padding: 0 0 30px 0;
+}
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 32px;
+}
+.team-card {
+    background: var(--white);
+    border-radius: 18px;
+    box-shadow: 0 6px 32px rgba(13, 133, 202, 0.10), 0 1.5px 6px rgba(0,0,0,0.07);
+    padding: 32px 24px 24px 24px;
+    max-width: 320px;
+    min-width: 240px;
+    flex: 1 1 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+.team-card:hover {
+    box-shadow: 0 12px 40px rgba(13, 133, 202, 0.18), 0 2px 8px rgba(0,0,0,0.10);
+    transform: translateY(-2px) scale(1.025);
+}
+.team-photo {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 18px;
+    box-shadow: 0 4px 18px rgba(13,133,202,0.13), 0 2px 8px rgba(0,0,0,0.10);
+    border: 4px solid var(--primary-blue);
+    background: var(--white);
+}
+.team-card h4 {
+    margin-bottom: 6px;
+    color: var(--primary-blue);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.team-role {
+    color: var(--secondary-blue);
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.team-bio {
+    color: var(--dark-gray);
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+.team-function {
+    color: #1cae4e;
+    font-size: 0.98rem;
+    font-style: italic;
+}
+@media (max-width: 900px) {
+    .team-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    .team-card {
+        min-width: 0;
+        width: 100%;
+        max-width: 98vw;
+        padding: 18px 8px 14px 8px;
+    }
+}
+
+/* ===== ENHANCED ABOUT FOOTER ===== */
+.about-footer {
+    background: linear-gradient(120deg, var(--primary-blue) 60%, var(--light-blue) 100%);
+    color: var(--white);
+    padding: 36px 0 18px 0;
+    border-radius: 18px 18px 0 0;
+    margin-top: 60px;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.07);
+    text-align: center;
+}
+.about-footer p {
+    font-size: 1.18rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    margin-bottom: 10px;
+    color: #eaf6ff;
+}
+.about-footer nav {
+    margin-top: 10px;
+}
+.about-footer .footer-nav ul {
+    display: inline-flex;
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.about-footer .footer-nav a {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1.05rem;
+    transition: color 0.3s;
+}
+.about-footer .footer-nav a:hover {
+    color: var(--light-blue);
+    text-decoration: underline;
+}
+@media (max-width: 700px) {
+    .team-photo {
+        width: 90px;
+        height: 90px;
+    }
+    .about-footer {
+        padding: 18px 0 10px 0;
+        border-radius: 12px 12px 0 0;
+    }
+    .about-footer p {
+        font-size: 1rem;
+    }
+    .about-footer .footer-nav ul {
+        gap: 12px;
+    }
+}
+
+/* ===== ENHANCED ML & OCR SECTION ===== */
+.enhanced-tech-section {
+    margin: 60px 0 40px 0;
+    padding: 0 0 30px 0;
+}
+.ml-ocr-description {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.ml-ocr-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    justify-content: center;
+    margin-top: 28px;
+}
+.ml-feature-card {
+    background: var(--white);
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(13,133,202,0.10);
+    padding: 18px 28px;
+    font-size: 1.08rem;
+    color: var(--primary-blue);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 220px;
+    max-width: 320px;
+    font-weight: 500;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+.ml-feature-card i {
+    font-size: 1.3em;
+    color: var(--secondary-blue);
+}
+.ml-feature-card:hover {
+    box-shadow: 0 6px 24px rgba(13,133,202,0.16);
+    transform: scale(1.04);
+}
+@media (max-width: 700px) {
+    .ml-ocr-features {
+        flex-direction: column;
+        gap: 14px;
+    }
+    .ml-feature-card {
+        min-width: 0;
+        width: 100%;
+        padding: 12px 10px;
+        font-size: 1rem;
+    }
+}
+/* Make Wanswa Drake's photo fully visible */
+.team-photo-drake {
+    object-fit: contain !important;
+    background: #fff;
+}
+
+/* ===== ENHANCED TERMS PAGE ===== */
+.enhanced-terms-bg {
+    background: linear-gradient(120deg, #eaf6ff 60%, #f4f8fb 100%);
+    min-height: 100vh;
+    padding-bottom: 40px;
+}
+.enhanced-terms-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 0 0 0;
+}
+.terms-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 32px;
+}
+.terms-card {
+    background: var(--white);
+    border-radius: 18px;
+    box-shadow: 0 6px 32px rgba(13, 133, 202, 0.10), 0 1.5px 6px rgba(0,0,0,0.07);
+    padding: 32px 24px 24px 24px;
+    max-width: 420px;
+    min-width: 260px;
+    flex: 1 1 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: box-shadow 0.3s, transform 0.3s;
+    margin-bottom: 20px;
+    position: relative;
+}
+.terms-card:hover {
+    box-shadow: 0 12px 40px rgba(13, 133, 202, 0.18), 0 2px 8px rgba(0,0,0,0.10);
+    transform: translateY(-2px) scale(1.025);
+}
+.terms-card i {
+    font-size: 2.1em;
+    color: var(--primary-blue);
+    margin-bottom: 10px;
+    align-self: center;
+}
+.terms-card h3 {
+    color: var(--secondary-blue);
+    margin-bottom: 10px;
+    font-size: 1.18rem;
+    font-weight: bold;
+}
+.terms-card p, .terms-card ul {
+    color: var(--dark-gray);
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+}
+.terms-card ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+.terms-card ul ul {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.terms-card a {
+    color: var(--primary-blue);
+    text-decoration: underline;
+    font-weight: 500;
+}
+.terms-card a:hover {
+    color: var(--secondary-blue);
+}
+@media (max-width: 900px) {
+    .terms-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    .terms-card {
+        min-width: 0;
+        width: 100%;
+        max-width: 98vw;
+        padding: 18px 8px 14px 8px;
+    }
+}
