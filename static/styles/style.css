@@ -475,10 +475,12 @@ footer {
 .slide-card img {
     width: 100%;
     height: 260px;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 12px;
     margin-bottom: 12px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    background: linear-gradient(120deg, #eaf6ff 60%, #f4f8fb 100%);
+    display: block;
 }
 .slide-caption {
     font-size: 1.08rem;
