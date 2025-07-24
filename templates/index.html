@@ -4,43 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AutoMark | Home</title>
-    <link rel="stylesheet" href="static/style.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../static/styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>AutoMark</h1>
-        <p>AI-Powered Grading App</p>
-        <nav>
-            <button class="hamburger" aria-expanded="false" aria-label="Menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="download.html">Download</a></li>
-                <li><a href="terms.html">Terms and Conditions</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>    
+    <header class="header">
+        <div class="container">
+            <div class="nav-container">
+                <div class="branding">
+                    <div class="logo">
+                        <img src="../images/bluetick.png" alt="AutoMark Logo">
+                        <h1 class="site-title">AutoMark</h1>
+                    </div>
+                    <p class="header-tagline">AI-Powered Grading App</p>
+                </div>
+
+                <button class="menu-toggle" id="menu-toggle">☰</button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="about.html">About Us</a></li>
+                    <li><a class="nav-link" href="download.html">Download</a></li>
+                    <li><a class="nav-link" href="terms.html">Terms And Conditions</a></li>
+                    <li><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
     <main>
         <section class="hero">
             <h2>Welcome to AutoMark</h2>
             <p>Scan. Grade. Review. All in one powerful mobile app.</p>
-            <a class="cta" href="download.html">📲 Download App</a>
+            <a class="cta" href="download.html">📲 Download AutoMark App</a>
         </section>
 
         <section class="screenshots">
             <h3>App Screenshots</h3>
-            <img src="assets/IMG-20250719-WA0026.jpg" alt="Home Screenshot">
-            <img src="assets/IMG-20250719-WA0027.jpg" alt="Upload Screenshot">
-            <img src="assets/IMG-20250719-WA0023.jpg" alt="Scan Marking-Guide Screenshot">
-            <img src="assets/IMG-20250719-WA0022.jpg" alt="Unmarked Scripts Screenshot">
-            <img src="assets/IMG-20250719-WA0025.jpg" alt="Results Screenshot">
+            <div class="scrolling-image-row">
+                <img src="../images/Home_screen.jpg" alt="Home Screenshot">
+                <img src="../images/Upload script.jpg" alt="Upload Screenshot">
+                <img src="../images/Guide_scanner.jpg" alt="Scan Marking-Guide Screenshot">
+                <img src="../images/Mark_script.jpg" alt="marked Scripts Screenshot">
+                <img src="../images/Results.jpg" alt="Results Screenshot">
+            </div>
         </section>
 
         <section class="instructions">
@@ -66,6 +71,8 @@
                 <p>+(256) 786-592537</p>
             <div class="social-icons">
                 <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/Lyazi-Patrick/AutoMark-CS-Project" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
                 <a href="https://linkedin.com/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a>
             </div>
@@ -76,6 +83,6 @@
             <p>Terms and conditions apply. For more information, please refer to our <a href="terms.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a>.</p>
         </div>
     </footer>
-    <script src="static/main.js"></script>
+    <script src="../static/scripts/main.js"></script>
 </body>
 </html>

@@ -5,27 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AutoMark App | About</title>
     <meta name="description" content="Learn about AutoMark App - an intelligent grading assistant using Flutter, Firebase, and Google ML Kit">
-    <link rel="stylesheet" href="static/style.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../static/styles/style.css">
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <h1>AutoMark App</h1>
-            <button class="hamburger" aria-expanded="false" aria-label="Menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-            <nav class="primary-nav">
-                <ul class="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html" aria-current="page">About</a></li>
-                    <li><a href="download.html">Download</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+    <header class="header">
+        <div class="container">
+            <div class="nav-container">
+                <div class="branding">
+                    <div class="logo">
+                        <img src="../images/bluetick.png" alt="AutoMark Logo">
+                        <h1 class="site-title">AutoMark</h1>
+                    </div>
+                    <p class="header-tagline"><br>
+                        AI-Powered Grading App</p>
+                </div>
+
+                <button class="menu-toggle" id="menu-toggle">☰</button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="about.html">About Us</a></li>
+                    <li><a class="nav-link" href="download.html">Download</a></li>
+                    <li><a class="nav-link" href="terms.html">Terms And Conditions</a></li>
+                    <li><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
     </header>
 
@@ -39,16 +43,21 @@
             <h3>Team Roles & Contributions</h3>
             <ul class="team-list">
                 <li class="team-member">
-                    <strong>Patrick:</strong> Coordinated development and integrated numerous screens into the project.
+                    <strong>Lyanzi Patrick:</strong> Coordinated development and integrated numerous screens into the project.
+                
                 </li>
+
                 <li class="team-member">
                     <strong>Ssekidde Jovan:</strong> Designed and developed application screens and website.
+
                 </li>
                 <li class="team-member">
                     <strong>Wasswa Drake:</strong> Integrated OCR and improved model accuracy.
+                
                 </li>
                 <li class="team-member">
                     <strong>Milla Samantha:</strong> Built the UI/UX for mobile and web.
+                
                 </li>
                 <li class="team-member">
                     <strong>Adrian Katongole:</strong> Set up authentication and real-time storage.
@@ -82,7 +91,7 @@
         </div>
     </footer>
 
-    <script src="static/main.js"></script>
+    <script src="../static/scripts/main.js"></script>
 </body>
 </html>
 

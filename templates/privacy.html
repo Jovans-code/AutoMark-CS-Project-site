@@ -6,36 +6,33 @@
     <title>AutoMark | Privacy Policy</title>
     <meta name="description" content="AutoMark's Privacy Policy - Learn how we handle your data securely">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="static/style.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../static/styles/style.css">
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <h1>AutoMark</h1>
-            <button class="hamburger" aria-expanded="false" aria-label="Menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-            <nav class="primary-nav">
-                <ul class="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="download.html">Download</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropbtn">Legal <i class="fas fa-chevron-down"></i></a>
-                        <ul class="dropdown-content">
-                            <li><a href="terms.html">Terms & Conditions</a></li>
-                            <li><a href="privacy.html" aria-current="page">Privacy Policy</a></li>
-                        </ul>
-                    </li>
+    <header class="header">
+        <div class="container">
+            <div class="nav-container">
+                <div class="branding">
+                    <div class="logo">
+                        <img src="../images/bluetick.png" alt="AutoMark Logo">
+                        <h1 class="site-title">AutoMark</h1>
+                    </div>
+                    <p class="header-tagline">AI-Powered Grading App</p>
+                </div>
+
+                <button class="menu-toggle" id="menu-toggle">☰</button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="about.html">About Us</a></li>
+                    <li><a class="nav-link" href="download.html">Download</a></li>
+                    <li><a class="nav-link" href="terms.html">Terms And Conditions</a></li>
+                    <li><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
     </header>
+
 
     <main class="privacy-page">
         <section class="privacy-section">
@@ -153,6 +150,6 @@
         </div>
     </footer>
 
-    <script src="static/main.js"></script>
+    <script src="../static/scripts/main.js"></script>
 </body>
 </html>

@@ -5,38 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AutoMark | Download</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="static/style.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../static/styles/style.css">
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <h1>AutoMark</h1>
-            <button class="hamburger" aria-expanded="false" aria-label="Menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-            <nav class="primary-nav">
-                <ul class="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="download.html" aria-current="page">Download</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+    <header class="header">
+        <div class="container">
+            <div class="nav-container">
+                <div class="branding">
+                    <div class="logo">
+                        <img src="../images/bluetick.png" alt="AutoMark Logo">
+                        <h1 class="site-title">AutoMark</h1>
+                    </div>
+                    <p class="header-tagline">AI-Powered Grading App</p>
+                </div>
+
+                <button class="menu-toggle" id="menu-toggle">☰</button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="about.html">About Us</a></li>
+                    <li><a class="nav-link" href="download.html">Download</a></li>
+                    <li><a class="nav-link" href="terms.html">Terms And Conditions</a></li>
+                    <li><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
     </header>
-
     <main class="download-page">
         <section class="download-section">
             <h2>Download & Install</h2>
             <p>Get the latest version of the AutoMark App for Android.</p>
 
-            <a href="apk/AutoMarkApp.apk" class="cta download-btn">
-                <i class="fas fa-download"></i> Download APK
-            </a>
+            <div class="download-options">
+                <a href="apk/AutoMarkApp.apk" class="cta download-btn">
+                    <i class="fas fa-download"></i> Download APK
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=your.package.name" class="play-store-btn" target="_blank" rel="noopener noreferrer">
+                    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" class="play-store-img">
+                </a>
+            </div>
 
             <div class="instructions">
                 <h3>Installation Instructions:</h3>
@@ -105,6 +112,6 @@
         </div>
     </footer>
 
-    <script src="static/main.js"></script>
+    <script src="../static/main.js"></script>
 </body>
 </html>
