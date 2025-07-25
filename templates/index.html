@@ -35,6 +35,8 @@
             <div class="hero-content">
                 <h2>Welcome to AutoMark</h2>
                 <p>Scan. Grade. Review. All in one powerful mobile app.</p>
+                <p><strong>Ready to Automate Your Marking?</strong></p>
+                <p>Join hundreds of educators already using AutoMark. It’s fast, easy, and reliable.</p>
                 <a class="cta" href="download.html">📲 Download AutoMark App</a>
             </div>
         </section>
@@ -85,25 +87,51 @@
         </section>
 
         <section class="instructions">
-        <h3>How to Use AutoMark</h3>
-        <ol>
-            <li>Install the AutoMark App on your mobile device.</li>
-            <li>Sign up or log in using your email address.</li>
-            <li>Go to the <strong>Upload Script</strong> section and upload clear images of your students' scripts.</li>
-            <li>Navigate to the <strong>Answer Key</strong> section and upload the marking guide for the exam or assignment.</li>
-            <li>Open the <strong>Unmarked Scripts</strong> section to see all uploaded student scripts ready for marking.</li>
-            <li>Tap the <strong>Mark</strong> button on any script card to begin the marking process.</li>
-            <li>Choose your preferred marking method: <strong>Auto Mark</strong> or <strong>AI Mark</strong>.</li>
-            <li>Let AutoMark compare student responses against the guide and generate scores with detailed feedback.</li>
-            <li>View all marked results in the <strong>Results</strong> section, complete with feedback and marking method used.</li>
-        </ol>
+            <h3>How to Use AutoMark</h3>
+            <ol>
+                <li>Install the AutoMark App on your mobile device.</li>
+                <li>Sign up or log in using your email address.</li>
+                <li>Go to the <strong>Upload Script</strong> section and upload clear images of your students' scripts.</li>
+                <li>Navigate to the <strong>Answer Key</strong> section and upload the marking guide for the exam or assignment.</li>
+                <li>Open the <strong>Unmarked Scripts</strong> section to view scripts ready for marking.</li>
+                <li>Tap the <strong>Mark</strong> button to begin grading. Choose either <strong>Auto Mark</strong> or <strong>AI Mark</strong>.</li>
+                <li>View all marked results in the <strong>Results</strong> section, complete with feedback and marking method used.</li>
+                <li><strong>Upgrade to Premium</strong> to unlock powerful features like:
+                <ul>
+                    <li>Bulk Marking of multiple scripts at once</li>
+                    <li>Analytics Dashboard for performance insights</li>
+                    <li>Advanced PDF Reports for easy sharing</li>
+                    <li>Long-Term Storage of marked scripts</li>
+                </ul>
+                </li>
+                <li>Go to the <strong>Payments</strong> section in the app to upgrade securely via <strong>MTN Mobile Money</strong>.</li>
+            </ol>
+            </section>
+        <section class="features">
+            <h3>Key Features</h3>
+            <ul>
+                <li>AI-powered grading with Google ML Kit</li>
+                <li>Instant results and feedback</li>
+                <li>Supports multiple question formats</li>
+                <li>Secure and reliable data storage with Firebase</li>
+            </ul>
         </section>
-
+        <br>
+        <section class="quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="download.html">Download AutoMark App</a></li>
+                <li><a href="about.html">Learn More About Us</a></li>
+                <li><a href="terms.html">Terms and Conditions</a></li>
+                <li><a href="contact.html">Contact Support</a></li>
+            </ul>
+        </section>
     </main>
 
     <footer class="footer">
         <div class="footer-grid">
             <div class="footer-section">
+                <img src="../images/bluetick.png" width="80" height="auto" alt="AutoMark Logo" class="footer-logo">
                 <h4>AutoMark</h4>
                 <p>Innovative grading solutions for modern educators.</p>
             </div>
@@ -111,6 +139,7 @@
                 <h4>Contact</h4>
                 <p>support@automark.edu</p>
                 <p>+(256) 786-592537</p>
+                <p>+(256) 756-386884</p>
                 <div class="social-links">
                     <a class="social-link" href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
                     <a class="social-link" href="https://github.com/Lyazi-Patrick/AutoMark-CS-Project" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
@@ -125,34 +154,11 @@
         </div>
     </footer>
     <script src="../static/scripts/main.js"></script>
-    <script>
-    let slideIndex = 0;
-    showSlides();
-    function showSlides() {
-        let i;
-        let slides = document.getElementsByClassName("slide");
-        let dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-        setTimeout(showSlides, 3500); // Change image every 3.5 seconds
-    }
-    function plusSlides(n) {
-        slideIndex += n-1;
-        if (slideIndex < 0) slideIndex = 0;
-        showSlides();
-    }
-    function currentSlide(n) {
-        slideIndex = n-1;
-        showSlides();
-    }
-    </script>
+    <!-- Modal for Expanded Image -->
+    <div id="imgModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+    </div>
 </body>
 </html>
