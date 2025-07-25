@@ -35,6 +35,8 @@
             <div class="hero-content">
                 <h2>Welcome to AutoMark</h2>
                 <p>Scan. Grade. Review. All in one powerful mobile app.</p>
+                <p><strong>Ready to Automate Your Marking?</strong></p>
+                <p>Join hundreds of educators already using AutoMark. It’s fast, easy, and reliable.</p>
                 <a class="cta" href="download.html">📲 Download AutoMark App</a>
             </div>
         </section>
@@ -93,6 +95,25 @@
                 <li>Receive instant grading powered by OCR & ML.</li>
             </ol>
         </section>
+        <section class="features">
+            <h3>Key Features</h3>
+            <ul>
+                <li>AI-powered grading with Google ML Kit</li>
+                <li>Instant results and feedback</li>
+                <li>Supports multiple question formats</li>
+                <li>Secure and reliable data storage with Firebase</li>
+            </ul>
+        </section>
+        <br>
+        <section class="quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="download.html">Download AutoMark App</a></li>
+                <li><a href="about.html">Learn More About Us</a></li>
+                <li><a href="terms.html">Terms and Conditions</a></li>
+                <li><a href="contact.html">Contact Support</a></li>
+            </ul>
+        </section>
     </main>
 
     <footer class="footer">
@@ -119,34 +140,11 @@
         </div>
     </footer>
     <script src="../static/scripts/main.js"></script>
-    <script>
-    let slideIndex = 0;
-    showSlides();
-    function showSlides() {
-        let i;
-        let slides = document.getElementsByClassName("slide");
-        let dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-        setTimeout(showSlides, 3500); // Change image every 3.5 seconds
-    }
-    function plusSlides(n) {
-        slideIndex += n-1;
-        if (slideIndex < 0) slideIndex = 0;
-        showSlides();
-    }
-    function currentSlide(n) {
-        slideIndex = n-1;
-        showSlides();
-    }
-    </script>
+    <!-- Modal for Expanded Image -->
+    <div id="imgModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+    </div>
 </body>
 </html>
