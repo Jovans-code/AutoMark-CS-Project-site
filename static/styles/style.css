@@ -327,6 +327,10 @@
     color: white;
 }
 
+.hero-content{
+    background-color: rgb(12, 121, 194);
+}
+
 /* Responsive Design for Enhanced Sections */
 @media (max-width: 768px) {
     .section-header h3 {
